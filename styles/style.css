@@ -1,0 +1,192 @@
+/* ROOT */
+:root {
+    /* colocar as variaveis de cor aqui */
+}
+
+/* COLORS */
+.highlights {
+    color: yellow;
+}
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Roboto&display=swap');
+
+/* BOTOES */
+.inter {
+    font-family: 'Inter', sans-serif !important;
+}
+
+/* TITULOS */
+.montserrat {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+/* TEXTOS */
+.roboto {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+/* GLOBAL */
+body {
+    color: white;
+    background-color: black;
+}
+
+section {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+h1, h2, strong{
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 900;
+    line-height: 35px;
+    box-sizing: border-box;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    font-family: 'Inter', sans-serif;
+}
+
+.line {
+    width: 60px;
+    height: 4px;
+    background-color: yellow;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.glow {
+    box-shadow: 0px 0px 37px 0px rgb(242 140 49 / 56%);
+}
+
+/* ALERTHEADER */
+#alert-header {
+    background-color: yellow;
+    color: black !important;
+}
+
+/* HERO SECTION */
+.logo {
+    width: 100px;
+}
+
+#hero-section {
+    background-image: url(../assets/BG-HERO.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: auto;
+}
+
+.custom-text-padding {
+    padding-top: 200px;
+}
+
+/* SHAPES TRANSFORMADOS */
+.custom-card-template {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.outside-border {
+    border: 1px solid rgba(255, 255, 0, 0.541);
+    border-radius: 20px;
+    padding: 1px;
+    width: 100%;
+}
+
+.inside-border {
+    border: 1px solid rgba(255, 255, 0, 0.541);
+    border-radius: 20px;
+    padding: 8px;
+    width: 100%;
+}
+
+.depoimento-card-video {
+    width: 100%;
+    height: 200px;
+    background-color: grey;
+}
+
+/* CARROSSEL SHAPES TRANSFORMADOS */
+.owl-nav {
+    position: relative;
+}
+.owl-prev {
+    font-size: 70px !important;
+}
+
+.owl-next {
+    font-size: 70px !important;
+}
+
+.custom-carousel-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mini-logo {
+    width: 40px !important;
+}
+
+/* O QUE É O PROJETO */
+#about-section {
+    background-image: url(../assets/bg-002.jpg);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    background-size: 100% 200%;
+
+}
+
+.card-template {
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #F28C3142;
+    margin: 10px 10px 10px 10px;
+    padding: 30px 30px 30px 30px;
+    width: 30% !important;
+    border-radius: 20px !important; 
+    background-image: linear-gradient(120deg, rgba(242, 140, 49, 0.4) 0%, rgba(242, 140, 49, 0.2) 100%) !important;
+    /* linear-gradient(120deg, #F28C318F 0%, #F28C3100 100%)  */
+}
+
+#about-content-card-container {
+    display: flex !important;
+    flex-wrap: wrap ;
+    text-align: center;
+}
+
+.card-template h2 {
+    font-size: 1.2vw;
+    font-weight: 900;
+}
+
+.card-template p {
+    font-size: 1vw;
+}
+
+.circle {
+    border-radius: 50%;
+    background-color: rgb(242, 140, 49);
+}
+
+#about-content-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 50px;
+
+}
