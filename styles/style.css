@@ -272,15 +272,43 @@ a {
 }
 
 .footer-top-container {
-    margin-top: 2%;
-    margin-bottom: 2%;
-    text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-align: center;
 }
 
-.footer-top-container h2{
-    margin-bottom: 1%;
+.footer-top-container h2 {
+  margin-bottom: 1%;
 }
 
 .footer-bottom-container {
-    text-align: center;
+  text-align: center;
+}
+
+.title {
+  margin-top: 2%;
+}
+#price-section img{
+  width: 100%;
+}
+
+#price-section .card-template {
+  width: 100% !important;
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+  text-align:center;
+  
+}
+#price-section ul {
+    list-style-type: none;
+}
+#price-section .discount {
+    font-size: 30px;
+}
+#price-section .big-price {
+    font-size: 65px;
+}
+#price-section .btn {
+    font-size: 35px;
+    margin-top: 2%;
 }
