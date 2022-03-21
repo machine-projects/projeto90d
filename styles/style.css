@@ -33,11 +33,11 @@ body {
 }
 
 section {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
-h1, h2, strong{
+h1, h2, strong {
     font-family: 'Montserrat', sans-serif;
     -webkit-font-smoothing: antialiased;
     font-weight: 900;
@@ -81,7 +81,7 @@ a {
 #hero-section {
     background-image: url(../assets/BG-HERO.jpg);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: contain;
     height: auto;
 }
 
@@ -121,6 +121,7 @@ a {
 .owl-nav {
     position: relative;
 }
+
 .owl-prev {
     font-size: 70px !important;
 }
@@ -143,12 +144,14 @@ a {
 #about-section {
     background-image: url(../assets/bg-002.jpg);
     background-repeat: no-repeat;
-    /* background-size: cover; */
-    height: auto;
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
     row-gap: 50px;
-    background-size: 100% 200%;
+    padding-left: 15%;
+    padding-right: 15%;
+
 
 }
 
@@ -159,14 +162,14 @@ a {
     margin: 10px 10px 10px 10px;
     padding: 30px 30px 30px 30px;
     width: 30% !important;
-    border-radius: 20px !important; 
+    border-radius: 20px !important;
     background-image: linear-gradient(120deg, rgba(242, 140, 49, 0.4) 0%, rgba(242, 140, 49, 0.2) 100%) !important;
     /* linear-gradient(120deg, #F28C318F 0%, #F28C3100 100%)  */
 }
 
 #about-content-card-container {
     display: flex !important;
-    flex-wrap: wrap ;
+    flex-wrap: wrap;
     text-align: center;
 }
 
@@ -189,4 +192,51 @@ a {
     flex-wrap: wrap;
     row-gap: 50px;
 
+}
+
+/* SEÇÃO PARA QUEM */
+#para-quem-section {
+    background-image: url(../assets/bg003.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.biotipo-card {
+    perspective: 1000px;
+}
+
+.flipper {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.biotipo-card:hover {
+    transform: rotateX(180deg);
+}
+
+.card-front {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease;
+    background-color: grey;
+}
+
+.card-back {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    background-color: grey;
+}
+
+.mt--5 {
+    margin-bottom: -40px;
 }
