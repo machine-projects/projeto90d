@@ -307,83 +307,65 @@
 
             <!-- LINHA QUE VAI DIVIDIR A HEADLINE DA SUBHEADLINE -->
             <div class="line"></div>
+            <div class="row">
+                <div class="col-6">
 
-            <p class="col-6">O “Nome do Método” foi feito para Homens e são adaptados para todos os BIOTIPOS, tanto para
-                quem tem
-                dificuldades para ganhar massa muscular, quanto para quem simplesmente não consegue queimar gordura
-                rapidamente.
-            </p>
+                    <p class="">O “Nome do Método” foi feito para Homens e são adaptados para todos os BIOTIPOS, tanto para
+                        quem tem
+                        dificuldades para ganhar massa muscular, quanto para quem simplesmente não consegue queimar gordura
+                        rapidamente.
+                    </p>
+                </div>
+            </div>
 
             <h4>
                 Toque no seu biotipo:
             </h4>
 
             <div id="biotipo-cards-container" class="row gap-5 justify-content-around">
-                <div class="card-template d-flex flex-column justify-content-around">
-                    <div class="circle"></div>
-                    <img src="assets/1620450378_Grafico_ecto_endo_450-removebg-preview-e1634314460418.png"
-                        alt="ectomorfo">
-                    <h2>ECTOMORFO</h2>
-                    <hr>
-                    <p>Focado em ganho de massa magra e definição muscular acelerado. Os treinos podem ser usados
-                        para treinar 3x, 4x, e na semana, se adequando a sua rotina corrida!</p>
-                </div>
+               <div class="col-md">
+                   <div class="card-template d-flex flex-column justify-content-around" onclick="showOrHideElement('.ectomorfo')">
+                       <img src="assets/1620450378_Grafico_ecto_endo_450-removebg-preview-e1634314460418.png"
+                           alt="ectomorfo">
+                       <h2>ECTOMORFO</h2>
+                       <hr>
+                       <p class="ectomorfo collapse">Se você tem pernas e braços longos, come de tudo e não consegue ganhar massa muscular de
+                        jeito nenhum, é de você que estou falando. O “Nome Do Método” vai obrigar o seu corpo a
+                        ganhar massa muscular enquanto queima a gordura de uma vez por todas!</p>
+                   </div>
 
-                <div class="biotipo-cards col-3">
+               </div>
+               <div class="col-md">
+                   <div class="card-template d-flex flex-column justify-content-around" onclick="showOrHideElement('.mesomorfo')">
+                       <img src="./assets/1620450378_Grafico_ecto_endo_450-removebg-preview-1-e1634314614328.png"
+                           alt="mesomorfo">
+                       <h2>MESOMORFO</h2>
+                       <hr>
+                       <p class="mesomorfo collapse">Corpo atlético, um pouco mais de facilidade para ganhar massa muscular e queimar
+                        gordura,
+                        mas não se engane, sem o treino e a dieta certa, de nada vai adiantar a sua “boa”
+                        genética!
+                        Por isso o “Nome do Método” será obrigatório para você extrair 100% do seu potencial.</p>
+                   </div>
 
+               </div>
+               <div class="col-md">
+                   <div class="card-template d-flex flex-column justify-content-around" onclick="showOrHideElement('.endomorfo')">
+                       <img src="./assets/1620450378_Grafico_ecto_endo_450-removebg-preview-1-e1634314614328.png"
+                           alt="endomorfo">
+                       <h2>ENDOMORFO</h2>
+                       <hr>
+                       <p class="endomorfo collapse">Corpo atlético, um pouco mais de facilidade para ganhar massa muscular e queimar
+                        gordura,
+                        mas não se engane, sem o treino e a dieta certa, de nada vai adiantar a sua “boa”
+                        genética!
+                        Por isso o “Nome do Método” será obrigatório para você extrair 100% do seu potencial.</p>
+                   </div>
 
+               </div>
 
-
-                    <div class="flipper">
-                        <div class="card-front">
-                            <img src="./assets/1620450378_Grafico_ecto_endo_450-removebg-preview-e1634314460418.png"
-                                alt="ectomorfo">
-                            <h5>ECTOMORFO</h5>
-                        </div>
-                        <div class="card-back">
-                            <p>
-                                Se você tem pernas e braços longos, come de tudo e não consegue ganhar massa muscular de
-                                jeito nenhum, é de você que estou falando. O “Nome Do Método” vai obrigar o seu corpo a
-                                ganhar massa muscular enquanto queima a gordura de uma vez por todas!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="biotipo-cards col-3">
-                    <div class="flipper">
-                        <div class="card-front">
-                            <img src="./assets/1620450378_Grafico_ecto_endo_450-removebg-preview-1-e1634314614328.png"
-                                alt="mesomorfo">
-                            <h5>MESOMORFO</h5>
-                        </div>
-                        <div class="card-back">
-                            <p>
-                                Corpo atlético, um pouco mais de facilidade para ganhar massa muscular e queimar
-                                gordura,
-                                mas não se engane, sem o treino e a dieta certa, de nada vai adiantar a sua “boa”
-                                genética!
-                                Por isso o “Nome do Método” será obrigatório para você extrair 100% do seu potencial.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="biotipo-cards col-3">
-                    <div class="flipper">
-                        <div class="card-front">
-                            <img src="./assets/1620450378_Grafico_ecto_endo_450-removebg-preview-2-e1634314704552.png"
-                                alt="endomorfo">
-                            <h5>ENDOMORFO</h5>
-                        </div>
-                        <div class="card-back">
-                            <p>
-                                O biótipo mais propício a ganhar volume muscular, porém junto com isso vem a gordura. Se
-                                esse é o seu biótipo, fique tranquilo, o “Nome do Método” vai fazer você queimar essa
-                                camada
-                                de gordura e retenção, deixando apenas os músculos aparentes.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+              
+                
             </div>
         </section>
 
@@ -402,7 +384,6 @@
                 <div class="col-12">
                     <div class="owl-carousel owl-theme my-4">
                         <div class="item outside-border custom-card-template d-flex flex-column justify-content-around">
-                            <div class="circle"></div>
                             <div class="inside-border justify-content-center text-center custom-carousel-card">
                                 <div class="depoimento-card-title">
                                     NOME
@@ -670,7 +651,6 @@
                 <div class="row justify-content-center">
                     <div class="col-sm-7">
                         <div id="card-checkout" class="card-template d-flex flex-column ">
-                            <div class="circle"></div>
                             <img src="assets/mockuppm.png" alt="">
                             <ul>
                                 <li>

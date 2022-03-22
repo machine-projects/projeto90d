@@ -194,11 +194,6 @@ a {
   font-size: 1vw;
 }
 
-.circle {
-  border-radius: 50%;
-  background-color: rgb(242, 140, 49);
-}
-
 #about-content-card-container {
   display: flex;
   flex-wrap: wrap;
@@ -354,6 +349,21 @@ a {
     font-size: x-large;
   }
 
+  h1, h2 {
+    font-size: xx-large;
+  }
+
+  #about-content-card-container {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+
+  #about-content-card-container .card-template {
+    width: 100% !important;
+    font-size: 50px !important;
+  }
+
 }
 
 
@@ -372,16 +382,24 @@ a {
 }
 
 #biotipo-cards-container  .card-template:hover  {
-  border-color: yellow;
+  border-color: #ffc107;
   border-width: 2px;
-
-
 }
-#biotipo-cards-container  p {
-  display: none;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.9s linear;
+/* PRECISA DE MEDIA */
+#biotipo-cards-container .card-template {
+  width: 100% !important;
+  min-height: 420px;
 }
+
+#biotipo-cards-container  .card-template:hover hr {
+  color: #ffc107;
+}
+
+#biotipo-cards-container  .card-template:hover > hr  {
+  color: #ffc107;
+  opacity: 0.7;
+}
+
 #biotipo-cards-container img {
-  width: 40%;
+  max-width: 280px ;
 }
