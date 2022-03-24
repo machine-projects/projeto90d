@@ -19,7 +19,7 @@
 
 /* TITULOS */
 .montserrat {
-  font-family: "Montserrat", sans-serif !important;
+  font-family: "Montserrat", sans-serif !important; 
 }
 
 /* TEXTOS */
@@ -323,8 +323,12 @@ a {
     font-size: 65px;
 }
 #price-section .btn {
-    font-size: 35px;
+    font-size: 30px;
     margin-top: 2%;
+}
+
+#card-checkout {
+  width: ;
 }
 
 
@@ -453,7 +457,8 @@ a {
     line-height: 50px;
   }
 
-  #about-content-card-container {
+  
+  #about-content-ontainer {
     display: flex !important;
     flex-direction: column !important;
     width: 100% !important;
