@@ -305,8 +305,10 @@
                 </div>
             </div>
         </section>
+        <div class="container-fluid card-perso" >
+                   <section id="para-quem-section" class="d-flex flex-column gap-5">
 
-        <section id="para-quem-section" class="d-flex flex-column gap-5">
+        </div>
             <h2 class="mt--5">
                 PARA QUEM FOI FEITO O
                 <span class="highlights">PROJETO 90D</span>
@@ -328,7 +330,7 @@
             <h4>
                 Toque no seu biotipo:
             </h4>
-            
+           
             <div id="biotipo-cards-container" class="row  justify-content-md-center">
                <div class="col-md-4">
                    <div class="card-template d-flex flex-column justify-content-around" onclick="showOrHideElement('.ectomorfo')">
@@ -593,7 +595,7 @@
             </div>
 
             <!-- ESTILIZAR ESSE LINK COM A CLASSE DE BOTÃO -->
-            <div class="d-grid gap-2 col-md-7 m-auto py-5 ">
+            <div class="d-grid gap-2 col-md py-5 ">
                 <a class="btn btn-warning btn-block glow title pulse" href="#card-checkout">
                     QUERO TER ACESSO AO PROJETO 90D
                 </a>
@@ -603,14 +605,14 @@
         <section id="area-de-membros">
 
             <div id="about-product" class="col">
-                <h2>
-                    O QUE TE ESPERA NA
+                <h2 style="line-height: 50px;">
+                    O QUE TE ESPERA NA <br>
                     <span class="highlights">ÁREA DE MEMBROS</span>
                     ?
                 </h2>
 
                 <!-- LINHA QUE VAI DIVIDIR A HEADLINE DA SUBHEADLINE -->
-                <div class="line"></div>
+                <div class="line m-auto my-4"></div>
 
                 <div style="background-color: grey; width: 100%; height: 500px;" class="text-center my-5">
                     [ VIDEO DA AREA DE MEMBROS ]
@@ -653,7 +655,7 @@
 
             <!-- LINHA QUE VAI DIVIDIR A HEADLINE DO CARD -->
             <div class="line"></div>
-            <div class="container">
+            <div class="container-fluid m-0">
                 <div class="row justify-content-center">
                     <div class="col">
                         <div id="card-checkout" class="card-template d-flex flex-column ">
@@ -711,7 +713,7 @@
                                 <!-- ESTILIZAR ESSE LINK COM A CLASSE DE BOTÃO -->
 
                                 <div class="d-grid gap-2 col-md m-auto pb-5">
-                                    <a class="btn btn-warning btn-block glow" href="#">
+                                    <a class="btn btn-warning btn-block glow custom-checkout-btn" href="#">
                                         GARANTIR MINHA VAGA COM O DESCONTO ESPECIAL
                                     </a>
                                 </div>
@@ -734,7 +736,7 @@
                 </div>
             </div>
             <div class="duvidas-container">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row ">
                         <div class="seta-direita"></div>
                         <div onclick="showOrHideElement('#question-access')"

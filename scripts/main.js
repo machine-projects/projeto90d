@@ -14,3 +14,9 @@ function showOrHideElement(element) {
       break;
   }
 }
+
+
+function cardShap(type){
+  showOrHideElement(`#${type}-img`)
+  showOrHideElement(`#${type}-body`)
+}
