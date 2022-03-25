@@ -12,7 +12,7 @@ body {
 
 }
 
-.headear {
+.header-background {
     background-image: url(../assets/BG-HERO.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -29,12 +29,15 @@ body {
 .headear h3 span {
     font-weight: 800;
 }
+.headear a {
+    margin-bottom: 8%;
+}
 
 .center {
     text-align: center;
 }
 
-.about {
+.about-background {
     background-image: url(../assets/bg-002.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -62,8 +65,12 @@ margin-bottom: 2%;
 .whats .card:hover {
     color: yellow;
 }
+.bonus {
+    font-size: 30px;
+}
 .bonus span {
     color: yellow;
+    font-size: 35px;
 }
 .bonus .margin{
   margin-bottom: 4%;
