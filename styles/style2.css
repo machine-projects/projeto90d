@@ -127,6 +127,9 @@ body {
 .price ul {
     list-style-type: none;
     line-height: 2;
+    font-size: xx-large;
+
+
 }
 
 .price .big-price {
@@ -167,17 +170,54 @@ body {
 }
 
 @media screen {
-    .headear img {
-        max-width: 210px;
-    }
-    .access img {
-        max-width: 170px;
-    }
+ .headear img {
+     max-width: 210px;
+ }
+
     .col-6 p {
         flex: 1 0 0%;
         width: 100%;
         max-width: 100%;
     }
+
+  
+
+}
+
+@media only screen and (max-width: 600px) {
+       
+
+       .access img {
+           max-width: 170px;
+       }
+
+       .bonus .card-text {
+           font-size: large;
+
+       }
+    .price ul {
+
+         font-size: medium;
+
+     }
+
+     .price span {
+         font-size: xx-large;
+         ;
+     }
+
+     .price ul span {
+         font-size: medium;
+     }
+
+     .price .big-price {
+         font-size: xxx-large;
+     }
+
+     .price .values {
+         line-height: normal;
+     }
+
 }
 
 .members {
@@ -243,7 +283,7 @@ body {
 .card {
     padding: 30px 30px 30px 30px;
     border-radius: 20px;
-    background-image: linear-gradient( 120deg, rgb(102 59 20 / 40%) 0%, rgb(255 193 138 / 20%) 100%);
+    background-image: linear-gradient(120deg, rgb(102 59 20 / 40%) 0%, rgb(255 193 138 / 20%) 100%);
     background: #76401bb8;
     text-align: center;
     min-height: 280px;
@@ -269,9 +309,11 @@ body {
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.05);
     }
+
     100% {
         transform: scale(1);
     }

@@ -123,13 +123,26 @@ a {
 
 .depoimento-card-photo {
   width: 100%;
-  height: 300px;
+  height: min-content;
   background-color: grey;
+}
+
+.owl-item.active {
+  height: auto;
+}
+
+.owl-item.cloned {
+ height: 250px;
 }
 
 /* CARROSSEL SHAPES TRANSFORMADOS */
 .owl-nav {
   position: relative;
+}
+
+.owl-item {
+  overflow: hidden;
+  height: 250px;
 }
 
 .owl-prev {
@@ -163,13 +176,44 @@ a {
   padding-right: 5%;
 }
 
+.circle {
+  height: 200px;
+  width: 200px;
+  background-color:rgba(251, 255, 0, 0.514);
+  border-radius: 50%;
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+svg:hover {
+  transform: scale(1.1);
+}
+
+svg {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 50px;
+}
+
+path {
+  fill: white;
+}
+
+
+
 .card-template {
+  position: relative;
+  padding-top: 100px !important;
   border-style: solid;
   border-width: 1px 1px 1px 1px;
   border-color: #f28c3142;
   margin: 10px 10px 10px 10px;
   padding: 30px 30px 30px 30px;
-  width: 30% !important;
+  display: flex;
+  max-width: 70%;
   border-radius: 20px !important;
   background-image: linear-gradient(
     120deg,
@@ -179,20 +223,76 @@ a {
   /* linear-gradient(120deg, #F28C318F 0%, #F28C3100 100%)  */
 }
 
+.card-template-bonus {
+  position: relative;
+  padding-top: 100px !important;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #f28c3142;
+  margin: 10px 10px 10px 10px;
+  padding: 30px 30px 30px 30px;
+  display: flex;
+  border-radius: 20px !important;
+  background-image: linear-gradient(
+    120deg,
+    rgba(242, 140, 49, 0.4) 0%,
+    rgba(242, 140, 49, 0.2) 100%
+  ) !important;
+  /* linear-gradient(120deg, #F28C318F 0%, #F28C3100 100%)  */
+}
+
+.card-template-biotipo {
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #f28c3142;
+  margin: 10px 10px 10px 10px;
+  padding: 30px 30px 30px 30px;
+  display: flex;
+  width: 100% !important;
+  border-radius: 20px !important;
+  background-image: linear-gradient(
+    120deg,
+    rgba(242, 140, 49, 0.4) 0%,
+    rgba(242, 140, 49, 0.2) 100%
+  ) !important;
+  /* linear-gradient(120deg, #F28C318F 0%, #F28C3100 100%)  */
+}
+
+.card-template h2 {
+  font-size: 40px !important;
+  line-height: 45px;
+}
+
+.card-template p {
+  font-size: xx-large !important;
+}
+
+.card-template-bonus h2 {
+  font-size: 40px !important;
+  line-height: 45px;
+  margin-bottom: 20px;
+}
+
+.card-template-bonus p {
+  font-size: xx-large !important;
+}
+
+.card-template-biotipo h2 {
+  font-size: 40px !important;
+  line-height: 45px;
+}
+
+.card-template-biotipo p {
+  font-size: xx-large !important;
+}
+
 #about-content-card-container {
   display: flex !important;
   flex-wrap: wrap;
   text-align: center;
 }
 
-.card-template h2 {
-  font-size: 1.2vw;
-  font-weight: 900;
-}
 
-.card-template p {
-  font-size: 1vw;
-}
 
 #about-content-card-container {
   display: flex;
@@ -308,14 +408,16 @@ a {
 #price-section .card-template {
   width: 100% !important;
   font-size: 22px;
+  min-width: 100%;
   font-family: "Montserrat", sans-serif;
   text-align:center;
+  font-size: xx-large;
 }
 #price-section ul {
     list-style-type: none;
     line-height: 2;
-  
-}
+  }
+
 #price-section .discount {
     font-size: 30px;
 }
@@ -327,10 +429,20 @@ a {
     margin-top: 2%;
 }
 
-#card-checkout {
-  width: ;
+.col-md-7 .btn {
+  border-radius: 700px;
+  padding-left:  10px !important;
+  padding-right: 10px !important;
 }
 
+#footer-copywright {
+  font-size: 35px;
+}
+
+.duvidas .btn {
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+}
 
 @media screen and (max-width: 1000px) {
 
@@ -441,8 +553,10 @@ a {
 
   .btn {
     width: 100% !important;
-    font-size: x-large;
+    font-size: xx-large;
     font-weight: 800;
+    border-radius: 20px;
+    padding: 50px 0px 50px 0px !important;
     background: linear-gradient(49deg, rgba(255,248,0,0.9220063025210083) 0%, rgba(251, 255, 0, 0.942) 15%, rgba(255,128,0,0.9836309523809523) 100%);
   }
 
@@ -464,7 +578,7 @@ a {
     width: 100% !important;
   }
 
-  #about-content-card-container .card-template {
+  #about-content-card-container .card-template-biotipo {
     width: 100% !important;
     font-size: 50px !important;
   }
@@ -489,7 +603,7 @@ a {
 #biotipo-cards-container   {
   box-sizing: unset;
 }
-#biotipo-cards-container  .card-template {
+#biotipo-cards-container  .card-template-biotipo {
   align-items: center;
   cursor: pointer;
   border-width: 2px;
