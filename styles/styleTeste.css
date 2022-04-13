@@ -1,0 +1,43 @@
+/* ROOT */
+:root {
+  /* colocar as variaveis de cor aqui */
+}
+
+
+/* COLORS */
+.highlights {
+  color: yellow;
+}
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap');
+/* BOTOES */
+.inter {
+  font-family: "Inter", sans-serif !important;
+}
+
+/* TITULOS */
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* TEXTOS */
+.roboto {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+
+body {
+  background-color: black;
+}
+
+h2 {
+  font-size: large !important;
+  font-weight: 900 !important;
+}
+
+.btn {
+  background-color: rgb(198, 198, 5) !important;
+}
