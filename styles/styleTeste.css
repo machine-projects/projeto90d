@@ -37,7 +37,27 @@ h2 {
   font-size: large !important;
   font-weight: 900 !important;
 }
+  
 
-.btn {
-  background-color: rgb(198, 198, 5) !important;
+
+.glow {
+  box-shadow: 0px 0px 37px 20px rgb(242 140 49 / 56%);
+}
+
+@keyframes buttonPulse {
+  0% {
+      transform: scale(1);
+  }
+
+  50% {
+      transform: scale(1.05);
+  }
+
+  100% {
+      transform: scale(1);
+  }
+}
+
+.pulse {
+  animation: buttonPulse 1s ease infinite;
 }
